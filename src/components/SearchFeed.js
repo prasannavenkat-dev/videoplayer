@@ -36,9 +36,8 @@ const SearchFeed = () => {
         flex: 2
       }}
     >
-      <Typography variant="h4" fontWeight="bold" sx={{ color: "white" }} mb={3}>
-        Search Results For <span style={{ color: "#FC1503" }}>
-          {searchTerm} </span>
+      <Typography variant="h4" fontWeight="bold" sx={{ color: "#131313" }} mb={3}>
+        {`Search Results For ${searchTerm}`} 
       </Typography>
       <Videos videos={videos} justifyContent="center" direction="row" />
     </Box>

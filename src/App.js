@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 function App() {
   return (
     <Router>
-<Box sx={{background:"#000"}}>
+<Box sx={{background:"#ffffff"}}>
 <Navbar/>
 
 <Routes>

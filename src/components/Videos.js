@@ -18,10 +18,10 @@ const Videos = ({videos,justifyContent,direction}) => {
 {
     videos.map((item,index)=>{
     
-    return <>    
-    {item.id.videoId && <VideoCard key ={index}  video={item}/>}
-    {item.id.channelId && <ChannelCard key={index} channel={item} />}
-    </>})
+    return <React.Fragment key={`${index}_videos`}>    
+    {item.id.videoId && <VideoCard key ={`${index}_video`}  video={item}/>}
+    {item.id.channelId && <ChannelCard key={`${index}_channel`} channel={item} />}
+    </React.Fragment>})
 
 }
     </Stack>

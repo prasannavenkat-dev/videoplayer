@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Stack } from "@mui/system";
-import { logo } from "../utils/constants";
+import  logo  from "../assets/images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
 import { IconButton } from "@mui/material";
@@ -22,13 +22,13 @@ const navigate = useNavigate();
      justifyContent="space-between"
      sx={{
       position:"sticky",
-      background:"#000"
+      background:"#ffffff"
      }}
      p={2}
      
      >
       <Link to="/" sx={{ display: "flex", justifyContent: "center" }}>
-        <img src={logo} alt="logo" height={45} />
+        <img className="logo" src={logo} alt="logo"  />
       </Link>
 
       <Paper
@@ -49,7 +49,7 @@ const navigate = useNavigate();
           onChange={(e) => setSearchTerm(e.target.value)} 
           
         />
-        <IconButton type="submit" sx={{ p: "10px", color: "red" }} >
+        <IconButton type="submit" sx={{ p: "10px", color: "#0f0f0f" }} >
           <Search />
         </IconButton>
       </Paper>

@@ -32,16 +32,16 @@ const VideoDetail = () => {
 
       <Stack sx={{ flexDirection: { sm: "column", md: "row" } }} py={2}>
 
-        <Box flex={1}>
+        <Box flex={1} sx={{margin:"0 20px"}}>
           <Box sx={{ width: "100%", top: "86px", position: "sticky" }}>
             <ReactPlayer width="100%" height="70vh" className="react-player" url={`https://www.youtube.com/watch?v=${id}`} controls />
 
-            <Typography variant="h5" fontWeight="bold" p={2} sx={{ color: "#fff" }}>
+            <Typography variant="h5" fontWeight="bold" p={2} sx={{ color: "#0f0f0f" }}>
               {videoDetail?.snippet?.title}
             </Typography>
 
-            <Stack sx={{ display: "flex", justifyContent: "space-between", flexDirection: "row", color: "#fff" }} py={1} px={2}>
-              <Typography variant={{ sm: "subtitle1", md: "h6" }} sx={{ color: "#fff" }}>
+            <Stack sx={{ display: "flex", justifyContent: "space-between", flexDirection: "row", color: "#0f0f0f" }} py={1} px={2}>
+              <Typography variant={{ sm: "subtitle1", md: "h6" }} sx={{ color: "#0f0f0f" }}>
                 {videoDetail?.snippet?.channelTitle}
                 <CheckCircle sx={{ fontSize: "12px", color: "gray", ml: "5px" }} />
 
@@ -69,8 +69,11 @@ const VideoDetail = () => {
         
         </Box> */}
         
+      <div style={{marginRight:"20px"}}>
+      <Videos videos={videos} justifyContent="center" direction="column" alignItems="center" />
 
-<Videos videos={videos} justifyContent="center" direction="column" alignItems="center" />
+      </div>
+
 
 
 

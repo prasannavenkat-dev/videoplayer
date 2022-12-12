@@ -34,7 +34,6 @@ setVideos(()=>{
         sx={{
           height: { sm: "auto", md: "92vh" },
           px: { sm: 0, md: 2 },
-          borderRight: "1px solid #3d3d3d"
         }}
       >
 
@@ -56,9 +55,8 @@ height:"90vh",
 flex:2
       }}
       >
-<Typography variant="h4" fontWeight="bold" sx={{color:"white"}} mb={3}>
- {selectedCategory} <span style={{color:"#FC1503"}}>
- Videos</span>
+<Typography variant="h4" fontWeight="bold" sx={{color:"#0f0f0f"}} mb={3}>
+ {`${selectedCategory} Videos`}
 </Typography>
 
 <Box  sx={{
