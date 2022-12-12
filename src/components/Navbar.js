@@ -40,6 +40,8 @@ const navigate = useNavigate();
           mr: { sm: 5 },
           pl: 2,
           boxShadow: "none",
+          display:"flex",
+          justifyContent:"space-between"
         }}
       >
         <input
